@@ -3,7 +3,7 @@ AVX=ON
 AVX2=ON
 SSE41=ON
 SSE42=ON
-CUDA=OFF
+CUDA=ON
 OPENCL=ON
 OPENCL_SVM=OFF
 OPENGL=ON
@@ -12,7 +12,7 @@ VERSION=3.3.0
 GTK=ON
 QT=OFF
 
-PYTHON_BIN=/usr/bin/python3.6
+PYTHON_BIN=/usr/bin/python3
 # PYTHON_BIN=python
 # PYTHON_BIN=/home/linker/.pyenv/shims/python
 PYTHON_INCLUDE_DIR=$($PYTHON_BIN -c "from distutils.sysconfig import get_python_inc; print(get_python_inc())")
@@ -42,7 +42,9 @@ mkdir -p $ROOT/opencv-$VERSION/cmake_binary \
     -DENABLE_SSE41=$SSE41 \
     -DENABLE_SSE42=$SSE42 \
     -DENABLE_SSSE3=ON \
+    -DWITH_GSTREAMER=ON \
     -DWITH_OPENGL=$OPENGL \
+    -DWITH_LAPACK=ON \
     -DWITH_GTK=$GTK \
     -DWITH_QT=$QT \
     -DWITH_OPENCL=$OPENCL \

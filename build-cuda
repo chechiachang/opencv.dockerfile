@@ -8,7 +8,7 @@ OPENCL=ON
 OPENCL_SVM=OFF
 OPENGL=ON
 VERSION=3.3.0
-GTK=OFF
+GTK=ON
 QT=OFF
 
 ROOT=$HOME
@@ -63,12 +63,15 @@ mkdir -p $ROOT/opencv-$VERSION/cmake_binary \
     -DWITH_IPP=ON \
     -DWITH_TBB=$TBB \
     -DWITH_EIGEN=ON \
+    -DWITH_GSTREAMER=ON \
+    -DWITH_LAPACK=ON \
+    -DWITH_CUBLAS=ON \
     -DWITH_V4L=ON \
     -DWITH_FFMPEG=ON \
     -DENABLE_PRECOMPILED_HEADERS=ON \
     -DBUILD_PERF_TESTS=OFF \
     -DBUILD_TESTS=OFF \
     -DINSTALL_C_EXAMPLES=OFF \
-    ..  && make && make install)
+    ..  && make -j48 && make -j48 install)
 
 # rm -rf $VERSION.tar.gz $ROOT/opencv-$VERSION
