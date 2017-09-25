@@ -68,5 +68,6 @@ mkdir -p $ROOT/opencv-$VERSION/cmake_binary \
     -DINSTALL_C_EXAMPLES=OFF \
     ..  && make -j8 && sudo make install)
 
+ldconfig
 # -DCMAKE_INSTALL_PREFIX=$($PYTHON_BIN -c "import sys; print(sys.prefix)") \
 # rm -rf $VERSION.tar.gz $ROOT/opencv-$VERSION
