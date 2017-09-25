@@ -44,3 +44,10 @@ edit build file to meet your needs
 ```
 sudo ./build
 ```
+
+# Build darkflow
+
+```
+sudo ./build-darkflow
+```
+

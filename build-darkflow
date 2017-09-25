@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+
+pip3.6 install --upgrade tensorflow cython
+
+git clone https://github.com/thtrieu/darkflow.git
+cd darkflow
+sudo python3.6 setup.py build_ext --inplace
+sudo pip3.6 install -e .
+
+wget https://pjreddie.com/media/files/yolo.weights
+
+# flow --model cfg/yolo.cfg --load yolo.weights --demo camera
