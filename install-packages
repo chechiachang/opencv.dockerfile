@@ -13,6 +13,7 @@ apt-get install -y \
         wget \
         unzip \
         yasm \
+        python-apt \
         pkg-config \
         libswscale-dev \
         libeigen3-dev \
