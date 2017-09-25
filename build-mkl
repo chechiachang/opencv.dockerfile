@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+wget -c http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/12070/l_mkl_2018.0.128.tgz
+tar zxvf l_mkl_2018.0.128.tgz
+
+cd l_mkl_2018
+
+echo "vim silent.cfg to accept eula"
+echo "./install.sh --silent ./silent.cfg"
+
