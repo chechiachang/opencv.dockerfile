@@ -37,3 +37,14 @@ sudo ./build
 sudo ./build-darkflow
 ```
 
+# Build mkl
+
+```
+sudo ./build-mkl
+```
+
+# Build Caffe
+
+```
+sudo ./build-caffe
+```

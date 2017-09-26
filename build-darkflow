@@ -10,4 +10,4 @@ sudo pip3.6 install -e .
 
 wget https://pjreddie.com/media/files/yolo.weights
 
-# flow --model cfg/yolo.cfg --load yolo.weights --demo camera
+echo "flow --model cfg/yolo.cfg --load yolo.weights --demo camera"

@@ -1,0 +1,20 @@
+#!/bin/bash
+# wget -c https://github.com/opencv/opencv/archive/$VERSION.tar.gz
+# tar xzf $VERSION.tar.gz -C $ROOT 
+
+apt-get install -y \
+    libprotobuf-dev \
+    libleveldb-dev \
+    libsnappy-dev \
+    libopencv-dev \
+    libhdf5-serial-dev \
+    protobuf-compiler
+
+apt-get install -y --no-install-recommends libboost-all-dev
+
+echo "Run build-mkl to install mkl(optional)"
+
+git clone https://github.com/BVLC/caffe.git 
+cd caffe
+
+
