@@ -8,16 +8,8 @@ pure opencv container image without Python bindings
 
 To isolate the native python on ubuntu, we use a new version python
 
-
 ```
-sudo add-apt-repository ppa:jonathonf/python-3.6
-sudo apt-get update
-```
-
-```
-apt-get install -y python3.6
-python3.6 -V
-which python3.6
+sudo ./install-packages
 ```
 
 install pip
@@ -29,12 +21,6 @@ python3.6 get-pip.py
 install numpy
 ```
 pip install numpy
-```
-
-### Package Dependencies
-
-```
-sudo ./install-packages
 ```
 
 # Build opencv
