@@ -8,6 +8,8 @@ cd darkflow
 sudo python3.6 setup.py build_ext --inplace
 sudo pip3.6 install -e .
 
-wget https://pjreddie.com/media/files/yolo.weights
+curl -O https://pjreddie.com/media/files/yolo.weights
+curl -O https://pjreddie.com/media/files/tiny-yolo-voc.weights
 
 echo "flow --model cfg/yolo.cfg --load yolo.weights --demo camera"
+echo "flow --model cfg/tiny-yolo-voc.cfg --load tiny-yolo-voc.weights --demo camera"
