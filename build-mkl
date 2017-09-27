@@ -3,6 +3,8 @@
 wget -c http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/12070/l_mkl_2018.0.128.tgz
 tar zxvf l_mkl_2018.0.128.tgz
 
+echo "http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/12106/l_python3_p_2018.0.018.tgz"
+
 cd l_mkl_2018
 
 echo "vim silent.cfg to accept eula"
