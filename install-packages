@@ -4,7 +4,7 @@ deb http://ppa.launchpad.net/jonathonf/python-3.6/ubuntu xenial main
 # deb-src http://ppa.launchpad.net/jonathonf/python-3.6/ubuntu xenial main
 LIST
 
-sudo add-apt-repository ppa:jonathonf/python-3.6
+add-apt-repository ppa:jonathonf/python-3.6
 
 apt-get update
 apt-get install -y python3.6-dev python3.6
