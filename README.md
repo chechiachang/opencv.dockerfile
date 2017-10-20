@@ -12,23 +12,10 @@ To isolate the native python on ubuntu, we use a new version python
 sudo ./install-packages
 ```
 
-install pip
-```
-wget https://bootstrap.pypa.io/get-pip.py
-python3.6 get-pip.py
-```
-
-install numpy
-```
-pip install numpy
-```
-
-# Build opencv
-
 edit build file to meet your needs
 
 ```
-sudo ./build
+sudo ./build-python3
 ```
 
 # Build darkflow
