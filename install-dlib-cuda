@@ -1,0 +1,22 @@
+#!/bin/bash
+echo "Checking python3.6..."
+PYTHON=$(command which python3.6)
+if [ -z $PYTHON ] ; then
+    echo "Checking python3"
+    PYTHON=$(command which python3)
+fi
+if [ -z $PYTHON ] ; then
+    echo "Checking python"
+    PYTHON=$(command which python)
+fi
+echo "Found python: $PYTHON"
+
+[ -d dlib ] && (cd dlib && git checkout master && git pull --rebase origin master)
+[ -d dlib ] || git clone https://github.com/davisking/dlib.git dlib
+
+(cd dlib \
+    && sudo $PYTHON setup.py install \
+            --yes DLIB_NO_GUI_SUPPORT \
+            --yes DLIB_USE_CUDA \
+            --yes USE_AVX_INSTRUCTIONS \
+            --compiler-flags "-O3 -Wall")
