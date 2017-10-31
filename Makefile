@@ -1,7 +1,13 @@
-avx-sse:
-	docker build --tag opencv:avx-sse .
+
+all: install-cuda-cudnn install-packages build-python3
+
+install-cuda-cudnn:
+	sudo ./install-cuda-cudnn
+
+install-packages:
+	sudo ./install-packages
+
+build-python3:
+	sudo ./build-python3
 
 
-# default tag
-all: avx-sse
-	docker tag opencv:avx-sse opencv:latest
