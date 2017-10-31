@@ -7,3 +7,8 @@ wget https://storage.googleapis.com/deep-learning-lib/libcudnn7_7.0.3.11-1%2Bcud
 wget https://storage.googleapis.com/deep-learning-lib/libcudnn7-dev_7.0.3.11-1%2Bcuda8.0_amd64.deb
 
 sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
+sudo apt-get update && sudo apt-get install cuda -y
+sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-cublas-performance-update_8.0.61-1_amd64.deb
+
+sudo dpkg -i libcudnn7_7.0.3.11-1%2Bcuda8.0_amd64.deb
+sudo dpkg -i libcudnn7-dev_7.0.3.11-1%2Bcuda8.0_amd64.deb
