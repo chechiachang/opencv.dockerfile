@@ -10,4 +10,5 @@ install-packages:
 build-python3:
 	sudo ./build-python3
 
-
+install-dlib-cuda:
+	sudo ./install-dlib-cuda
