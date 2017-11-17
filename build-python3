@@ -1,8 +1,4 @@
 #!/bin/bash
-AVX=ON
-AVX2=ON
-SSE41=ON
-SSE42=ON
 CUDA=ON
 OPENCL=ON
 OPENCL_SVM=OFF
@@ -21,7 +17,7 @@ PYTHON_PACKAGE_PATH=$($PYTHON_BIN -c "from distutils.sysconfig import get_python
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 python3.6 get-pip.py
-pip install numpy
+pip2.7 install numpy
 pip3.6 install numpy
 
 echo $PYTHON_BIN
@@ -43,11 +39,6 @@ mkdir -p $ROOT/opencv-$VERSION/cmake_binary \
     -DBUILD_opencv_java=OFF \
     -DCMAKE_BUILD_TYPE=RELEASE \
     -DWITH_CUDA=$CUDA \
-    -DENABLE_AVX=$AVX \
-    -DENABLE_AVX2=$AVX2 \
-    -DENABLE_SSE41=$SSE41 \
-    -DENABLE_SSE42=$SSE42 \
-    -DENABLE_SSSE3=ON \
     -DWITH_GSTREAMER=ON \
     -DWITH_OPENGL=$OPENGL \
     -DWITH_LAPACK=ON \
