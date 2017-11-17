@@ -17,8 +17,11 @@ apt-get install -y \
         yasm \
         python-apt \
         pkg-config \
+	libblas-dev \
+	liblapack-dev \
         libswscale-dev \
         libeigen3-dev \
+	libcupti-dev \
         libtbb2 \
         libtbb-dev \
         libjpeg-dev \
