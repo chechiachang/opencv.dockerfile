@@ -5,6 +5,7 @@ deb http://ppa.launchpad.net/jonathonf/python-3.6/ubuntu xenial main
 LIST
 
 add-apt-repository ppa:jonathonf/python-3.6 -y
+add-apt-repository ppa:gstreamer-developers/ppa -y
 
 apt-get update
 apt-get install -y python3.6-dev python3.6
@@ -17,11 +18,12 @@ apt-get install -y \
         yasm \
         python-apt \
         pkg-config \
-	libblas-dev \
-	liblapack-dev \
+        gstreamer1.0* \
+    	libblas-dev \
+	    liblapack-dev \
         libswscale-dev \
         libeigen3-dev \
-	libcupti-dev \
+	    libcupti-dev \
         libtbb2 \
         libtbb-dev \
         libjpeg-dev \
