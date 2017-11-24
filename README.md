@@ -1,12 +1,13 @@
 # opencv.dockerfile
 pure opencv container image without Python bindings
 
+# Quick Start
+
+make all
 
 # Prerequisite
 
 ### Python
-
-To isolate the native python on ubuntu, we use a new version python
 
 ```
 sudo ./install-packages
