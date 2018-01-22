@@ -16,3 +16,5 @@ sudo dpkg -i cuda-8-cublas.deb
 #sudo dpkg -i libcudnn6-dev_6.0.21-1%2Bcuda8.0_amd64.deb
 sudo dpkg -i cudnn-6.deb
 sudo dpkg -i cudnn-6-dev.deb
+
+# rm cuda-8.deb cuda-8-cublas.deb cudnn-6.deb cudnn-6-dev.deb
